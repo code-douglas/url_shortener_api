@@ -6,7 +6,9 @@ const app = express();
 const allowedOrigin = 'https://url-shortener-tau-roan.vercel.app/';
 
 app.use(cors({
-  origin: allowedOrigin
+  origin: allowedOrigin,
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type']
 }));
 app.use(express.json());
 
