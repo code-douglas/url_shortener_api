@@ -10,6 +10,11 @@ const urlSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
+  expiresAt: {
+    type: Date,
+    required: false,
+    index: { expires: 0 }
+  },
 });
 
 const Url = mongoose.model('Url', urlSchema);
