@@ -8,7 +8,7 @@
     "dev": "nodemon ./server.mjs localhost 3000"
   },
   "keywords": [
-    "Shotener",
+    "shortener",
     "API",
     "URL",
     "shorter"
